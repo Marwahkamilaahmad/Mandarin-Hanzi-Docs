@@ -1,4 +1,4 @@
-# hànyǔ-Hanzi-Docs
+# Hànyǔ-Hànzì-Docs
 
 1. 家 -> jiā -> home
 2. 学校 -> xuéxiào -> school
