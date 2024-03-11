@@ -1,4 +1,4 @@
-# Mandarin-Hanzi-Docs
+# Hanyue-Hanzi-Docs
 
 
 1. 家 -> jiā -> home
