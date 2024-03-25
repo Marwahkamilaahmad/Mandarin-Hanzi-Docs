@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class MandarinController extends Controller
@@ -11,7 +12,15 @@ class MandarinController extends Controller
      */
     public function index()
     {
-        //
+        $client = new Client();
+        $url = "http://localhost:8000/";
+        $response = $client->request('GET', $url);
+        dd($response);
+        $content = $response->getBody()->getContents();
+        $contentArray = json_decode($content, true);
+        $data = $contentArray['data'];
+        return view('buku.index', ['data'=>$data]);
+    
     }
 
     /**
